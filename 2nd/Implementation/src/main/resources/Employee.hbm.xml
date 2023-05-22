@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.example.implementation.Model.Employee" table="Employees">
+        <id name="id" type="java.lang.Integer" column="id">
+            <generator class="increment"/>
+        </id>
+
+        <property name="firstName" type="string" column="first_name"/>
+        <property name="lastName" type="string" column="last_name"/>
+        <property name="email" type="string" column="email"/>
+        <property name="password" type="string" column="password"/>
+        <many-to-one name="company" class="com.example.implementation.Model.Company" column="company_id" fetch="join"/>
+
+    </class>
+</hibernate-mapping>

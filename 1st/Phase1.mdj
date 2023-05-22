@@ -3302,7 +3302,7 @@
 									"font": "Arial;13;0",
 									"left": 304,
 									"top": 564.5,
-									"width": 76.25048828125,
+									"width": 75,
 									"height": 25,
 									"stereotypeLabel": {
 										"$ref": "AAAAAAGHZdJGpOLMPMk="
@@ -3496,7 +3496,7 @@
 									"font": "Arial;13;0",
 									"left": 276,
 									"top": 444.5,
-									"width": 134.97265625,
+									"width": 134,
 									"height": 25,
 									"stereotypeLabel": {
 										"$ref": "AAAAAAGHZdL4K+L7mOc="
@@ -3894,7 +3894,7 @@
 									"font": "Arial;13;0",
 									"left": 602,
 									"top": 564.5,
-									"width": 163.9052734375,
+									"width": 163,
 									"height": 25,
 									"stereotypeLabel": {
 										"$ref": "AAAAAAGHZdSgqONaHeI="
