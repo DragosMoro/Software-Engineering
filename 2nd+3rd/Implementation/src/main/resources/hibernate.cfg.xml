@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+    <session-factory>
+
+        <property name="dialect">org.sqlite.hibernate.dialect.SQLiteDialect</property>
+        <property name="connection.driver_class">org.sqlite.JDBC</property>
+        <property name="connection.url">jdbc:sqlite:monitoring1.db</property>
+        <property name="hibernate.hbm2ddl.auto">update</property>
+
+        <!-- Echo all executed SQL to stdout -->
+        <property name="show_sql">true</property>
+        <property name="format_sql">true</property>
+
+
+        <mapping resource="Boss.hbm.xml"/>
+        <mapping resource="CheckIn.hbm.xml"/>
+        <mapping resource="Employee.hbm.xml"/>
+        <mapping resource="Task.hbm.xml"/>
+        <mapping resource="Company.hbm.xml"/>
+        <mapping resource="CheckOut.hbm.xml"/>
+    </session-factory>
+</hibernate-configuration>
